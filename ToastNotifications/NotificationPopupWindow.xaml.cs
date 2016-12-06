@@ -38,6 +38,7 @@ namespace ToastNotifications
         public NotificationPopupWindow(FrameworkElement attachedElemnt)
         {
             InitializeComponent();
+            this.Activate(); //Set Active to bring notification to front of all windows
             SetProperties(attachedElemnt);
 
             Loaded += OnLoaded;
